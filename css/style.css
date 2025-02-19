@@ -338,7 +338,7 @@ background-color:rgb(144, 138, 254) ;
 
 @media screen and (max-width: 768px) {
     .card-1 {
-        min-height: 45vh;
+        min-height: 50vh;
     }
     
     .info img {
