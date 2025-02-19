@@ -8,6 +8,7 @@ body{
 }
 
 .img-fixed {
+    
     height: 50vh;
     background-image: url(../img/2.jpg);
     background-repeat: no-repeat;
