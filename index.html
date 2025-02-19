@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar fixed-top navbar-expand-lg bg-body-secondary bg-opacity-50">
+            <div class="container-fluid mx-2">
+                <a class="navbar-brand fw-bold " href="#" >
+                    <img src="img/Untitled (2).jpg" class="rounded-circle" alt="Logo" width="60" height="60">
+                    <strong>LONDON</strong> 
+                </a>
+    
+                <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item btn active ">
+                            <a class="nav-link active text-primary fs-5  "  aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item btn">
+                            <a class="nav-link text-primary fs-5" href="https://maps.app.goo.gl/ZWSkCG1qJ8dgcU4p7">Link</a>
+                        </li>
+    
+                        <li class="nav-item dropdown btn">
+                            <a class="nav-link dropdown-toggle text-primary fs-5" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Trips
+                            </a>
+                            <ul class="dropdown-menu bg-light bg-opacity-40 border-0 shadow ">
+                                <li><a class="dropdown-item text-info" href="#">Oxford</a></li>
+                                <li><a class="dropdown-item text-info" href="#">Cambridge</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item text-info" href="#">Brighton</a></li>
+                                <li><a class="dropdown-item text-info" href="#">Windsor</a></li>
+                                <li><a class="dropdown-item text-info" href="#">Lake District</a></li>
+                                <li><a class="dropdown-item text-info" href="#">Cotswolds</a></li>
+                                <li><a class="dropdown-item text-info" href="#">Liverpool</a></li>
+                                <li><a class="dropdown-item text-info" href="#">Manchester</a></li>
+                                <li><a class="dropdown-item text-info" href="#">MORE...</a></li>
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item btn">
+                            <a class="nav-link disabled text-primary fs-5" aria-disabled="true">About</a>
+                        </li>
+                    </ul>
+    
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-primary mx-3" type="submit">Search</button>
+                        <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                            Login
+                        </button>
+                    </form>
+    
+                    
+                    
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Login</h1>
+                    <button type="button" class="btn-close bg-danger" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                        </div>
+                        <div class="form-check form-switch mx-4">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked>
+                            <label class="form-check-label" for="flexSwitchCheckChecked">Remmember me</label>
+                            </div>
+                            
+                    </form> 
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary ">Login</button>
+                    <button type="button" class="btn btn-secondary ms-auto" data-bs-dismiss="modal">Close</button>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="position-fixed d-flex flex-column gap-4 align-items-center p-2 rounded-start z-2" style="top: 70%; right: 0; transform: translateY(-70%); ">
+        <a href="" class="btn d-block fs-2 m-1 text-primary  ">
+            <i class="fa-brands fa-facebook fs-1"></i>
+        </a>
+        <a href="" class="btn d-block fs-2 text-danger">
+            <i class="fa-brands fa-instagram fs-1"></i>
+        </a>
+        <a href="" class="btn d-block fs-2 text-success">
+            <i class="fa-brands fa-whatsapp fs-1"></i>
+        </a>
+        <a href="" class="btn d-block fs-2 text-primary">
+            <i class="fa-brands fa-linkedin fs-1"></i>
+        </a>
+        <a href="" class="btn d-block fs-2 text-info">
+            <i class="fa-brands fa-twitter fs-1"></i>
+        </a>
+    </div>
+    
+<main>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-pause="hover">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src=" img/5.jpg" style="height: 97vh;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block bg-dark bg-opacity-50 rounded-4 ">
+              <h2 class="pb-4">London</h2>
+              <p class="pb-4">the heart of culture, history, and innovation, awaits your discovery.</p>
+                <button class=" p-2 btn btn-outline-info ">Visit Us</button>
+                
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/big-ben-clock-tower-london-engla.jpg" style="height: 97vh;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 rounded-4">
+                <h2 class="pb-4">London</h2>
+                <p class="pb-4">the heart of culture, history, and innovation, awaits your discovery.</p>
+                  <button class=" p-2 btn btn-outline-info">Visit Us</button>
+                  
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/1.jpg" style="height: 97vh;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 rounded-4">
+                <h2 class="pb-4">London</h2>
+                <p class="pb-4">the heart of culture, history, and innovation, awaits your discovery.</p>
+                  <button class=" p-2 btn btn-outline-info ">Visit Us</button>
+                  
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="img/6.jpg" style="height: 97vh;" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block  bg-dark bg-opacity-50 rounded-4">
+                <h2 class="pb-4">London</h2>
+                <p class="pb-4">the heart of culture, history, and innovation, awaits your discovery.</p>
+                  <button class=" p-2 btn btn-outline-info">Visit Us</button>
+                  
+            </div>
+          </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</main>
+    <section>
+        <div class="container-fluid bg-info bg-opacity-50 py-4 px-4">
+            <h2 class="fw-bold">WELCOME</h2>
+            <p class="text-light-emphasis">Welcome to the heart of the UK! Discover the iconic landmarks, rich history, 
+                and vibrant culture that make London a must-visit destination. From the famous Big Ben and the Houses of Parliament to the majestic Tower Bridge,
+                    London offers a unique blend of tradition and modernity. Explore the world-class museums, such as the British Museum and the Tate Modern, 
+                    while also enjoying the beauty of Hyde Park and the lively atmosphere of Covent Garden. Whether you're a history enthusiast, a lover of art, 
+                    or simply looking for an unforgettable experience, London has something for everyone. Don't miss out on the chance to explore this dynamic city that 
+                    has been a center of innovation, fashion, and culture for centuries</p>
+            <button class="btn btn-light text-info">Learn more</button>
+        </div>
+    </section>
+        <hr>
+        <section  class="bg-secondary bg-opacity-25"  >
+            <div class="container-fluid rounded-2 text-center bg-info py-5">
+                <h2 class="text-light  text-center fs-1 fw-bold text-capitalize">Popular destination in London </h2>
+            </div>
+
+            <div class="accordion pt-3" id="accordionExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header fw-bold ">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      <strong>LONDON CITY</strong> 
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body  text-light-emphasis">
+                      London is the capital of the United Kingdom and its largest city. It is one of the world's most important economic and cultural centers. The city is famous for its iconic landmarks such as Big Ben, Tower Bridge, and Buckingham Palace. London is also home to world-renowned museums like the British Museum and the Natural History Museum.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header fw-bold ">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      <strong> OXFORD CITY</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body  text-light-emphasis">
+                      Oxford is a historic city in England, best known for being home to the University of Oxford, one of the oldest and most prestigious universities in the world. The city is filled with beautiful architecture, historic libraries, and charming streets. Oxford is often referred to as the "City of Dreaming Spires" due to its stunning university buildings.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item">
+                  <h2 class="accordion-header fw-bold ">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      <strong> LIVERPOOL CITY</strong>
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body text-light-emphasis">
+                      Liverpool is a major city in northwest England, widely known for its rich maritime history and cultural heritage. It is the birthplace of The Beatles and has a strong musical and artistic scene. Liverpool is also famous for its football clubs, Liverpool FC and Everton FC, as well as landmarks like the Royal Albert Dock and the Liverpool Cathedral.
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <hr>
+        <section>
+          <div class="translate container-fluid text-center fs-1 fw-bold text-capitalize text-light p-2  bg-info"  >
+            translate from arabic to english
+          </div>
+          <div class="write container-fluid bg-info bg-opacity-50 p-4" >
+                  <p class="text-capitalize  text-light fs-4">write and translate   <span class=" text-primary">press here</span></p>
+                  <button class="btn bg-light text-info " type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-9"> Copy</button>
+                  <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body">
+                          Text copied successfully
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button"  class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-group mt-3 ">
+                    <textarea class="form-control  " aria-label="With textarea" placeholder="translate" style="height: 150px;" ></textarea>
+                  </div>
+                  
+          </div>
+        </section>
+  <hr>
+
+  <section>
+    <div class="translate container-fluid text-center fs-1 fw-bold text-capitalize text-light p-2  bg-info"  >
+      translate from arabic to frensh
+    </div>
+    <div class="write container-fluid bg-info bg-opacity-50 p-4" >
+            <p class="text-capitalize  text-light fs-4">write and translate   <span class=" text-primary">press here</span></p>
+            <button class="btn bg-light text-info " type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-9"> Copy</button>
+            <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    Text copied successfully
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button"  class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input-group mt-3 ">
+              <textarea class="form-control  " aria-label="With textarea" placeholder="translate" style="height: 150px;" ></textarea>
+            </div>
+            
+    </div>
+  </section>
+  <hr>
+  <section>
+    <div class="translate container-fluid text-center fs-1 fw-bold text-capitalize text-light p-2  bg-info"  >
+      translate from arabic to German
+    </div>
+    <div class="write container-fluid bg-info bg-opacity-50 p-4" >
+            <p class="text-capitalize  text-light fs-4">write and translate   <span class=" text-primary">press here</span></p>
+            <button class="btn bg-light text-info " type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-9" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="Right popover"> Copy</button>
+            <div class="modal fade" id="exampleModal-9" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-body">
+                    Text copied successfully
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button"  class="btn btn-primary" data-bs-dismiss="modal">Ok</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="input-group mt-3 ">
+              <textarea class="form-control  " aria-label="With textarea" placeholder="translate" style="height: 150px;" ></textarea>
+            </div>
+            
+    </div>
+  </section>
+
+  <hr>
+  <section>
+    <div class="container-fluid  img-fixed " ></div>
+  </section>
+<section>
+  <div class="translate container-fluid text-center fs-1 fw-bold text-uppercase rounded-2 text-light p-2  bg-info"  >
+            popular destinations in london
+  </div>
+</section>
+
+<section class="p-5">
+  <div class="row row-cols-1 row-cols-md-3 g-5">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/london.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">London </h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text">The capital city of the UK, known for landmarks like the Tower of London, Buckingham Palace, and the British Museum.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/oxford.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Oxford</h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Liverpool .jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Liverpool</h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text">Famous for being the birthplace of The Beatles, as well as its rich maritime history.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+<section class="p-5">
+  <div class="row row-cols-1 row-cols-md-3 g-5">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Edinburgh .jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Edinburgh</h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text">The capital of Scotland, famous for its historic and cultural attractions like the Edinburgh Castle and the Royal Mile.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Manchester .jpg" class="card-img-top h-100" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Manchester</h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text">A major city in the north of England known for its rich industrial heritage, football culture, and cultural scene.</p>
+        </div>
+        
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Birmingham .jpg " class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Birmingham</h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text">A large city in the West Midlands, known for its diverse culture, shopping, and vibrant nightlife.</p>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-5 ">
+  <div class="row row-cols-1 row-cols-md-3 g-5 d-flex justify-content-around">
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Glasgow .jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Glasgow </h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text"> Scotland's largest city, known for its music scene, art galleries, and friendly atmosphere.</p>
+        </div>
+        
+      </div>
+    </div>
+
+    <div class="col">
+      <div class="card h-100">
+        <img src="img/Bristol jpg.jpg" class="card-img-top h-100" alt="...">
+        <div class="card-body">
+          <div class="d-flex justify-content-between">
+            <h5 class="card-title">Bristol</h5>
+            <button class="btn btn-info z-3">Know More</button>
+          </div>
+          <p class="card-text">A city in the southwest of England known for its vibrant culture, history, and iconic suspension bridge, the Clifton Suspension Bridge.</p>
+        </div>
+        
+      </div>
+    </div>
+
+
+
+
+  </div>
+</section>
+<section>
+  <div class="container-fluid  img-fixed img-fixed-2 " ></div>
+</section>
+<hr>
+<section>
+  <div class="translate container-fluid text-center fs-1 fw-bold text-uppercase rounded-2 text-black p-2  bg-info"  >
+    thanks for
+  </div>
+</section>
+
+
+<section class="container py-5">
+  <div class="row g-4 justify-content-center  py-5">
+
+      <div class="col-md-4 col-sm-6 col-12">
+          <div class="card-1">
+              <div class="card-1-imge card-1-imge-1"></div>
+              <div class="overlay p-4">
+                <div class="info-1">
+                  <h3 class="text-light">All thanks and appreciation</h3>
+                  <p class="text-light"><i class="fa-regular fa-clock"> </i> October 15.2020</p>
+                </div>
+                <div class="info">
+                  <img src="img/person-4.jpg" alt="">
+                  <p class="text-light">ENG.Sara Islam <br>
+                  Director of UI/UX</p>
+                </div>
+              </div>
+              
+
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12">
+          <div class="card-1">
+              <div class="card-1-imge card-1-imge-2"></div>
+              <div class="overlay p-4">
+                <div class="info-1">
+                  <h3 class="text-light">All thanks and appreciation</h3>
+                  <p class="text-light"><i class="fa-regular fa-clock"> </i> October 15.2020</p>
+                </div>
+                <div class="info">
+                  <img src="img/person-1.jpg" alt="">
+                  <p class="text-light">ENG.Mohamed Ahmed <br>
+                  Director of UI/UX</p>
+                </div>
+              </div>
+          </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 col-12">
+          <div class="card-1">
+              <div class="card-1-imge card-1-imge-3"></div>
+              <div class="overlay p-4">
+                <div class="info-1">
+                  <h3 class="text-light">All thanks and appreciation</h3>
+                  <p class="text-light"><i class="fa-regular fa-clock"> </i> October 15.2020</p>
+                </div>
+                <div class="info">
+                  <img src="img/person-2.jpg" alt="">
+                  <p class="text-light">ENG.Mariam Mohamed <br>
+                  Director of UI/UX</p>
+                </div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+</section>
+
+<section>
+  <div class="translate container-fluid text-center fs-1 fw-bold text-uppercase rounded-2 text-black p-2  bg-info"  >
+    London NEWS
+  </div>
+</section>
+
+
+<section class="container-fluid p-5">
+  <div class="row podcast-card  mx-auto align-items-center">
+
+    <div class="col-lg-9 col-12 p-5 content">
+      <h2 class="py-2 text-info"><strong>Podcast Title</strong></h2>
+      <p class="text-muted text-after"><i class="fa-regular fa-calendar-days"></i> Mon, May 25th 2020</p>
+      <p class="pb-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia neque fugit delectus dignissimos quidem nesciunt natus, libero perferendis sunt, ipsa iure culpa nisi, totam eius voluptas minima placeat dolorum eum?
+      </p>
+      <div class="buttons mt-5">
+        <button class="btn btn-secondary"><i class="fa-solid fa-podcast"></i> Podcast</button>
+        <button class="btn btn-secondary btn-center"><i class="fa-regular fa-clock"></i> 55 mins</button>
+        <button class="btn btn-secondary text-success-emphasis btn-color"><i class="fa-solid fa-play"></i> Play Episode</button>
+      </div>
+    </div>
+    
+    <div class="col-lg-3 col-12 image-container">
+      <img src="img/Birmingham .jpg" alt="" class="img-fluid">
+    </div>
+  </div>
+
+
+
+
+
+  <div class="row podcast-card  mx-auto align-items-center mt-5">
+    <div class="col-lg-3 col-12 image-container-2">
+      <img src="img/Birmingham .jpg" alt="" class="img-fluid">
+    </div>
+
+    <div class="col-lg-9 col-12 p-5 content">
+      <h2 class="py-2 text-info"><strong>Podcast Title</strong></h2>
+      <p class="text-muted text-after text-after1"><i class="fa-regular fa-calendar-days"></i> Mon, May 25th 2020</p>
+      <p class="pb-5">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia neque fugit delectus dignissimos quidem nesciunt natus, libero perferendis sunt, ipsa iure culpa nisi, totam eius voluptas minima placeat dolorum eum?
+      </p>
+      <div class="buttons mt-5">
+        <button class="btn btn-secondary"><i class="fa-solid fa-podcast"></i> Podcast</button>
+        <button class="btn btn-secondary btn-center"><i class="fa-regular fa-clock"></i> 55 mins</button>
+        <button class="btn btn-secondary text-success-emphasis btn-color1"><i class="fa-solid fa-play"></i> Play Episode</button>
+      </div>
+    </div>
+    
+    
+  </div>
+
+
+
+
+
+    
+      <div class="row podcast-card  mx-auto align-items-center mt-5">
+        <!-- النص -->
+        <div class="col-lg-9 col-12 p-5 content">
+          <h2 class="py-2 text-info"><strong>Podcast Title</strong></h2>
+          <p class="text-muted text-after text-after2"><i class="fa-regular fa-calendar-days"></i> Mon, May 25th 2020</p>
+          <p class="pb-5">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia neque fugit delectus dignissimos quidem nesciunt natus, libero perferendis sunt, ipsa iure culpa nisi, totam eius voluptas minima placeat dolorum eum?
+          </p>
+          <div class="buttons mt-5">
+            <button class="btn btn-secondary"><i class="fa-solid fa-podcast"></i> Podcast</button>
+            <button class="btn btn-secondary btn-center"><i class="fa-regular fa-clock"></i> 55 mins</button>
+            <button class="btn btn-secondary text-success-emphasis btn-color2"><i class="fa-solid fa-play"></i> Play Episode</button>
+          </div>
+        </div>
+    
+        <!-- الصورة -->
+        <div class="col-lg-3 col-12 image-container">
+          <img src="img/Birmingham .jpg" alt="" class="img-fluid">
+        </div>
+      </div>
+
+    
+
+
+
+      <div class="row podcast-card  mx-auto align-items-center mt-5">
+        <div class="col-lg-3 col-12 image-container-2">
+          <img src="img/Birmingham .jpg" alt="" class="img-fluid">
+        </div>
+    
+        <div class="col-lg-9 col-12 p-5 content">
+          <h2 class="py-2 text-info"><strong>Podcast Title</strong></h2>
+          <p class="text-muted text-after text-after3"><i class="fa-regular fa-calendar-days"></i> Mon, May 25th 2020</p>
+          <p class="pb-5">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia neque fugit delectus dignissimos quidem nesciunt natus, libero perferendis sunt, ipsa iure culpa nisi, totam eius voluptas minima placeat dolorum eum?
+          </p>
+          <div class="buttons mt-5">
+            <button class="btn btn-secondary"><i class="fa-solid fa-podcast"></i> Podcast</button>
+            <button class="btn btn-secondary btn-center"><i class="fa-regular fa-clock"></i> 55 mins</button>
+            <button class="btn btn-secondary text-success-emphasis btn-color3"><i class="fa-solid fa-play"></i> Play Episode</button>
+          </div>
+        </div>
+        
+        
+      </div>
+    </section>
+    
+
+    <section>
+      <div class="translate container-fluid text-center fs-1 fw-bold text-uppercase rounded-2 text-black p-2  bg-info"  >
+        join us
+      </div>
+</section>
+
+      <section class="container-fluid p-5  ">
+        <div class="row justify-content-center gap-5 g-3">
+          
+            <div class="icon bg-dark col-lg-3 col-md-6 col-sm-12">
+              <h3 class="text-white">Subscribe Now</h3>
+              <a href="#" class="social-icon my-3" style="--color:#0072b1">
+                <i class="fa-brands fa-linkedin-in fs-1"></i>
+              </a>
+              <p class="h5 link"><a href="#">Go to link</a></p>
+            </div>
+          
+      
+        
+            <div class="icon bg-dark col-lg-3 col-md-6 col-sm-12">
+              <h3 class="text-white">Subscribe Now</h3>
+              <a href="#" class="social-icon my-3" style="--color:#E1306c">
+                <i class="fa-brands fa-instagram fs-1"></i>
+              </a>
+              <p class="h5 link"><a href="#">Go to link</a></p>
+            </div>
+        
+      
+        
+            <div class="icon bg-dark col-lg-3 col-md-6 col-sm-12">
+              <h3 class="text-white">Subscribe Now</h3>
+              <a href="#" class="social-icon my-3" style="--color:#ff0050">
+                <i class="fa-brands fa-tiktok fs-1"></i>
+              </a>
+              <p class="h5 link"><a href="#">Go to link</a></p>
+            </div>
+          
+      
+        
+            <div class="icon bg-dark col-lg-3 col-md-6 col-sm-12">
+              <h3 class="text-white">Subscribe Now</h3>
+              <a href="#" class="social-icon my-3" style="--color:#4267b2">
+                <i class="fa-brands fa-facebook-f fs-1"></i>
+              </a>
+              <p class="h5  link"><a href="#">Go to link</a></p>
+            </div>
+          </div>
+      
+      </section>
+      
+      <footer >
+        <div class="continer bg-info px-4 ">
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 m-auto text-center">
+              <hr>
+              <img src="img/Untitled (2).jpg" class="rounded-circle" alt="Logo" width="80" height="80">
+                Good company
+              <hr>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 m-auto text-center">
+              <hr>
+              <img src="img/Untitled (2).jpg" class="rounded-circle" alt="Logo" width="80" height="80">
+              Important links
+              <hr>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 m-auto text-center">
+              <hr>
+              <img src="img/Untitled (2).jpg" class="rounded-circle" alt="Logo" width="80" height="80">
+                Vision
+              <hr>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 m-auto text-center">
+              <p>Tel : 000-000-000</p>
+              <p>Address :LONDON</p>
+              <p>Fax : 000-000-000</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 m-auto text-center">
+              <p class="text-light">Visit Us</p>
+              <p class="text-light">Take alook</p>
+              <p class="text-light">Your health is more important</p>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 m-auto text-center">
+              <p>Serveices for all</p>
+              <p>Provide best serveices</p>
+              <p>You will be better than before</p>
+            </div>
+          </div>
+
+          <div class="row justify-content-center">
+            <hr>
+            <div class=" col-12 m-auto text-center">
+              <p class="text-uppercase fw-bold">copyright&copy;2020 mosad nabil abokamer , good company, all rights</p>
+
+              <hr>
+            </div>
+          </div>
+
+        </div>
+      </footer>
+
+
+
+
+<script src="js/jquery-3.7.1.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+<script src="js/script.js"></script>
+
+</body>
+</html>
