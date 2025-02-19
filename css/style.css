@@ -319,9 +319,20 @@ background-color:rgb(144, 138, 254) ;
     .podcast-card:hover .image-container-2 img{
         transform: none; 
     }
-    .info{
+     .info {
+        height: auto;
         padding-bottom: 10px;
-
+        text-align: center;
+    }
+    .info img {
+        width: 70px;
+        height: 70px;
+    }
+    .info-1 h3 {
+        font-size: 1.2rem;
+    }
+    .info-1 p {
+        font-size: 0.9rem;
     }
 }
 
