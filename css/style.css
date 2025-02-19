@@ -15,7 +15,7 @@ body{
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    transform: translateZ(0);
+/*     transform: translateZ(0); */
    
 }
 
