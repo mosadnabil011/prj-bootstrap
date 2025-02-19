@@ -319,6 +319,8 @@ background-color:rgb(144, 138, 254) ;
     .podcast-card:hover .image-container-2 img{
         transform: none; 
     }
-    
+    .info{
+        height: 30%;
+    }
 }
 
