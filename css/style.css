@@ -55,7 +55,7 @@ body{
     background-image: url(../img/clarence-dock-leeds-england.jpg);
 }
 
-
+/* ////////////////////////////////////////////////////////////////////////////////////////// */
 
 .card-1 {
     min-height:60vh;
@@ -122,6 +122,9 @@ height: auto;
     padding-left:40px ;
 }
 
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
 .podcast-card {
     background: linear-gradient(to right, rgba(153, 240, 255, 0.242), white);
     border-radius: 10px;
@@ -294,88 +297,5 @@ background-color:rgb(144, 138, 254) ;
     .podcast-card:hover .image-container-2 img{
         transform: none; 
     }
-    .info {
-        height: auto;
-        padding-bottom: 10px;
-        text-align: center;
-    }
-    .info img {
-        width: 70px;
-        height: 70px;
-    }
-    .info-1 h3 {
-        font-size: 1.2rem;
-    }
-    .info-1 p {
-        font-size: 0.9rem;
-    }
     
-}
-
-@media screen and (max-width: 992px) {
-    .card-1 {
-        min-height: 50vh;
-    }
-    
-    .info {
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    .info img {
-        width: 70px;
-        height: 70px;
-    }
-    
-    .info-1 h3 {
-        font-size: 1.2rem;
-    }
-
-    .info-1 p {
-        font-size: 0.9rem;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .card-1 {
-        min-height: 50vh;
-    }
-    
-    .info img {
-        width: 60px;
-        height: 60px;
-    }
-
-    .info-1 h3 {
-        font-size: 1rem;
-    }
-
-    .info-1 p {
-        font-size: 0.85rem;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .card-1 {
-        min-height: 40vh;
-    }
-
-    .info {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-
-    .info img {
-        width: 50px;
-        height: 50px;
-    }
-
-    .info-1 h3 {
-        font-size: 0.9rem;
-    }
-
-    .info-1 p {
-        font-size: 0.8rem;
-    }
 }
