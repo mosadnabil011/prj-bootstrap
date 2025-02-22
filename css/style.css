@@ -21,6 +21,14 @@ body{
    
 }
 
+
+@supports (-webkit-touch-callout: none) {
+    .img-fixed {
+        background-attachment: scroll;
+    }
+}
+
+
 .card {
     position: relative;
     transition: transform 1s; 
