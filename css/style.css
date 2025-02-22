@@ -7,8 +7,8 @@ body{
     font-family: "Open Sans", serif !important;
 }
 
-.img-fixed {
-    
+.img-fixed {  
+    width: 100%;
     height: 50vh;
     background-image: url(../img/2.jpg);
     background-repeat: no-repeat;
@@ -16,6 +16,8 @@ body{
     background-position: center;
     background-attachment: fixed;
 /*     transform: translateZ(0); */
+        position: relative;
+
    
 }
 
